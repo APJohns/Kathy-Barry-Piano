@@ -1,0 +1,96 @@
+body {
+	font-family: 'PT Sans', sans-serif;
+	margin: 0;
+}
+li {
+	margin: 5px 0;
+}
+li a {
+	display: block;
+	background-color: white;
+	height: 75px;
+	margin: 3px 3px 3px 0;
+	padding-right: 3%;
+	text-align: right;
+	border-radius: 1px 8px 8px 1px;
+}
+a {
+	text-decoration: none;
+	color: 	#a35a29;
+}
+footer {
+	clear: both;	
+	background-color: #333333;
+	color: white;
+	height: 150px;
+	padding: 25px 4%;
+}
+#nav {
+	position: absolute;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 20%;
+	opacity: 0.75;
+	font-size: 20px;
+	z-index: 0;
+	overflow: hidden;
+}
+.navitem {
+	text-decoration: none;
+	color: black;
+}
+.navitem:hover {
+	width: 95%;
+}
+#startPanel {
+	background-image: url("assets/piano.jpg");
+	background-attachment: fixed;
+	height: 675px;
+}
+#secondPanel {
+	position: relative;
+	background-color: white;
+	padding: 25px 4%;
+	height: 450px;
+	z-index: 1;
+}
+.leftBlock {
+	float: left;
+	margin-left: 2%;
+	width: 45%;
+}
+.rightBlock {
+	float: right;
+	margin-right: 2%;
+	width: 45%;
+}
+#pageTitle {
+	padding-top: 175px;
+	text-align: center;
+	color: white;
+}
+.blackKey {
+	display: block;
+	margin-top: -12px;
+	background-color: black;
+	border-radius: 1px 4px 4px 1px;
+	float: left;
+	height: 25px;
+	width: 65%;
+	box-shadow: 1px 5px 5px #888888;
+}
+#startButton {
+	display: block;
+	margin: auto;
+	margin-top: 100px;
+	padding: 10px;
+	width: 125px;
+	border-radius: 25px;
+	background-color: #A11D00;
+	color: white;
+	opacity: 0.75;
+}
+#startButton:hover {
+	opacity: 1;
+}
