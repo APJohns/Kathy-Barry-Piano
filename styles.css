@@ -69,7 +69,7 @@ address {
 	height: 675px;
 }
 #firstPanel {
-	background-image: url("assets/bg.png");
+	background-image: url("assets/piano.jpg");
 	background-attachment: fixed;
 	color: white;
 	height: 395px;
@@ -123,4 +123,10 @@ address {
 }
 #startButton:hover {
 	opacity: 1;
+}
+.underlay{
+	display: block;
+	background-image: url("assets/underlay.png");
+	padding: 25px;
+	border-radius: 20px;
 }
