@@ -1,6 +1,7 @@
 body {
 	font-family: 'PT Sans', sans-serif;
 	margin: 0;
+	background-color: #333333;
 }
 h1 {
 	font-family: 'Oleo Script', cursive;
@@ -28,11 +29,10 @@ li a {
 	border-radius: 1px 8px 8px 1px;
 }
 footer {
-	clear: both;	
-	background-color: #333333;
-	color: white;
 	height: 100px;
-	padding: 25px 4%;
+	display: block;
+	color: white;
+	padding: 25px 7%;
 }
 address {
 	border-left: 1px solid #a35a29;
@@ -40,7 +40,6 @@ address {
 }
 #nav {
 	position: absolute;
-	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	width: 20%;
@@ -57,8 +56,9 @@ address {
 	width: 95%;
 }
 #quote {
+	flex-basis: 100%;
+	background-color: white;
 	text-align: center;
-	font-style: italic;
 	font-size: 30px;
 	padding-bottom: 50px;
 	border-bottom: 1px solid #a35a29;
@@ -69,30 +69,22 @@ address {
 	height: 675px;
 }
 #firstPanel {
-	background-image: url("assets/bg.png");
+	background-image: url("assets/piano.jpg");
 	background-attachment: fixed;
 	color: white;
-	height: 395px;
-	padding: 5px 5% 5px 21%;
+	padding: 5px 5% 50px 21%;
 	overflow: auto;
 }
 #secondPanel {
-	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 	background-color: white;
 	padding: 25px 4% 150px 4%;
-	height: 425px;
-	z-index: 1;
+	position: relative;
 }
-.leftBlock {
-	float: left;
-	padding-left: 2%;
-	width: 45%;
-}
-.rightBlock {
-	float: right;
-	margin-right: 2%;
-	padding-left: 2%;
-	width: 45%;
+.panelItem {
+	flex-basis: 40%;
 }
 #pageTitle {
 	padding-top: 175px;
@@ -123,4 +115,10 @@ address {
 }
 #startButton:hover {
 	opacity: 1;
+}
+.underlay{
+	display: block;
+	background-image: url("assets/underlay.png");
+	padding: 25px;
+	border-radius: 20px;
 }
