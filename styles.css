@@ -18,7 +18,7 @@ a {
 	text-decoration: none;
 	color: 	#a35a29;
 }
-li a {
+.pianoKey {
 	display: block;
 	background-color: white;
 	height: 75px;
@@ -27,6 +27,11 @@ li a {
 	padding-right: 3%;
 	text-align: right;
 	border-radius: 1px 8px 8px 1px;
+	text-decoration: none;
+	color: #333333;
+}
+.pianoKey:hover {
+	width: 95%;
 }
 footer {
 	height: 100px;
@@ -47,13 +52,6 @@ address {
 	font-size: 20px;
 	overflow: hidden;
 	z-index: 0;
-}
-.navitem {
-	text-decoration: none;
-	color: #333333;
-}
-.navitem:hover {
-	width: 95%;
 }
 #quote {
 	flex-basis: 100%;
