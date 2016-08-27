@@ -5,7 +5,6 @@ A website for Kathy Barry, a piano teacher located in Bolton, MA.
 Note: "About" and "Contact" pages are not yet included.
 
 Planned features: 
-  Page loading wheel
   Google Maps on "Contact" page
 
 Known Issue:
