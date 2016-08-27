@@ -8,9 +8,6 @@ h1 {
 	font-size: 75px;
 	margin: 0 5px 20px 5px;
 }
-h2 {
-	margin-top: 0;
-}
 li {
 	margin: 5px 0;
 }
@@ -78,7 +75,7 @@ address {
 	flex-wrap: wrap;
 	justify-content: space-around;
 	background-color: white;
-	padding: 25px 4% 150px 4%;
+	padding: 25px 4% 100px 4%;
 	position: relative;
 }
 .panelItem {
@@ -88,6 +85,12 @@ address {
 	padding-top: 175px;
 	text-align: center;
 	color: white;
+}
+#testimonials {
+	padding: 25px 4% 100px 4%;
+	background-image: url("assets/bg.png");
+	color: white;
+	text-indent: 12px;
 }
 .blackKey {
 	position: absolute;
