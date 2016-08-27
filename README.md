@@ -1,7 +1,12 @@
 ﻿# Kathy-Barry-Piano
 Developed by Ashley Johns
 
-A website for Kathy Barry, a piano teacher located in Bolton, MA. 
+A website for Kathy Barry, a piano teacher located in Bolton, MA.
+Note: "About" and "Contact" pages are not yet included.
+
+Planned features: 
+  Page loading wheel
+  Google Maps on "Contact" page
 
 Known Issue:
-Not yet compatible with edge (navitems are not where they sould be and stick out at the bottom of the page).
+  Not mobile friendly
