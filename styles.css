@@ -86,9 +86,8 @@ address {
 #payPanel {
 	text-align: center;
 	display: block;
-	background-image: url("assets/manuscript.png");
-	background-position: 50% 50%;
-	background-attachment: fixed;
+	background-image: url("assets/bg.png");
+	color: white;
 	position: relative;
 	padding: 10px 4% 50px 4%;
 }
@@ -99,8 +98,7 @@ address {
 }
 #testimonials {
 	padding: 25px 4% 100px 4%;
-	background-image: url("assets/bg.png");
-	color: white;
+	background-color: white;
 	text-indent: 12px;
 }
 .blackKey {
