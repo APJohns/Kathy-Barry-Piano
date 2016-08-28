@@ -32,12 +32,14 @@ a {
 }
 footer {
 	height: 100px;
+	background-color: #333333;
+	position: relative;
 	display: block;
 	color: white;
 	padding: 25px 7%;
 }
 address {
-	border-left: 1px solid #a35a29;
+	border-left: 2px solid #a35a29;
 	padding-left: 10px;
 }
 #nav {
@@ -81,6 +83,15 @@ address {
 .panelItem {
 	flex-basis: 40%;
 }
+#payPanel {
+	text-align: center;
+	display: block;
+	background-image: url("assets/manuscript.png");
+	background-position: 50% 50%;
+	background-attachment: fixed;
+	position: relative;
+	padding: 10px 4% 50px 4%;
+}
 #pageTitle {
 	padding-top: 175px;
 	text-align: center;
@@ -118,7 +129,8 @@ address {
 	opacity: 1;
 }
 .underlay{
-	display: block;
+	display: flex;
+	justify-content: flex-start;
 	background-image: url("assets/underlay.png");
 	padding: 25px;
 	border-radius: 20px;
