@@ -1,0 +1,114 @@
+<!-- Kathy Barry Piano - Services -->
+<!-- Developed by Ashley Johns -->
+<!-- ashleypjohns@gmail.com -->
+
+<!DOCTYPE html>
+<html>
+
+<!-- Header -->
+<head>
+<title>Kathy Barry Piano</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+</head>
+
+
+<!-- Body begins -->
+<body>
+<!-- Navigation -->
+<strong>
+<ul id="nav">
+	<!-- Linked Keys -->
+	<a href="index.html"><li class="pianoKey">Home</li></a>
+	<span class="blackKey"></span>
+	<a href="services.html"><li class="pianoKey">Services</li></a>
+	<span class="blackKey"></span>
+	<a href="about.html"><li class="pianoKey">About</li></a>
+	<span class="blackKey"></span>
+	<a href="contact.html"><li class="pianoKey">Contact</li></a>
+	<!-- Extra Keys -->
+	<li class="pianoKey"></li>
+	<span class="blackKey"></span>
+	<li class="pianoKey"></li>
+	<span class="blackKey"></span>
+	<li class="pianoKey"></li>
+	<li class="pianoKey"></li>
+	<span class="blackKey"></span>
+	<li class="pianoKey"></li>
+	<span class="blackKey"></span>
+	<li class="pianoKey"></li>
+</ul>
+</strong>
+
+
+<!-- Top Panel -->
+<div id="firstPanel">
+
+<h1>Contact</h1>
+
+<!-- Underlay text -->
+<div class="underlay">
+<p>Learning to play the piano is not like learning history: playing the piano, learning scales, techniques and music theory require consistent practice and lessons. 
+Continuing your lessons and practice year-round will make the best investment and will make you the best piano artist you can be.</p>
+<p>Lessons are given all year round.  We welcome inquiries.</p>
+</div>
+
+</div>
+
+
+<!-- Contact info -->
+<div id="secondPanel">
+
+<div style="text-align:center;">
+<h2>Call Us: <span style="font-weight:normal;">(978) 502 - 3373</span></h2>
+<em>or</em>
+<h2>E-Mail Us: <a href="mailto:kathy@kathybarrypiano.com" style="font-weight:normal;">kathy@kathybarrypiano.com</a></h2>
+<p>Call in advance for appointment times.</p>
+</div>
+
+<!-- Google Map -->
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</div>
+
+<!-- Footer -->
+<footer>
+<small>
+
+<!-- Address info -->
+<div style="float:left;">
+<address>
+Kathy Barry - Piano Teacher<br>
+Botlon, MA 01740-1405<br>
+978-502-3373<br>
+<a href="mailto:kathy@kathybarrypiano.com">kathy@kathybarrypiano.com</a>
+</address>
+</div>
+
+<!-- Copyright -->
+<span style="float:right;">
+&copy; Copyright 2016 Kathy Barry - Piano Teacher. All rights reserved.
+</span>
+
+</small>
+</footer>
+
+
+<!-- Google Map JS-->
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+
+<script>
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(42.4093229,-71.6086577),
+    zoom:15,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+</body>
+
+</html>
