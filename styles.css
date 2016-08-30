@@ -129,6 +129,7 @@ address {
 .underlay{
 	display: flex;
 	justify-content: flex-start;
+	flex-wrap: wrap;
 	background-image: url("assets/underlay.png");
 	padding: 25px;
 	border-radius: 20px;

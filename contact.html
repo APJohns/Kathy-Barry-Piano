@@ -45,54 +45,30 @@
 <!-- Top Panel -->
 <div id="firstPanel">
 
-<h1>About</h1>
+<h1>Contact</h1>
 
-<!-- Offered Sevices -->
+<!-- Underlay text -->
 <div class="underlay">
-<h2 style="align-self:center;">Towns Served</h2>
-<ul>
-	<li>Bolton [ 01740 ]</li>
-	<li>Leominster [ 01453 ]</li>
-</ul>
-<ul>
-	<li>Berlin [ 01503 ]</li>
-	<li>Marlborough [ 01752 ]</li>
-</ul>
-<ul>
-	<li>Harvard [ 01451 ]</li>
-	<li>Stow [ 01775 ]</li>
-</ul>
-<ul>
-	<li>Hudson [ 01749 ]</li>
-	<li>Westborough [ 01580 ]</li>
-</ul>
-<ul>
-	<li>Lancaster [ 01523 ]</li>
-	<li>Worcester [ 01601 ]</li>
-</ul>
+<p>Learning to play the piano is not like learning history: playing the piano, learning scales, techniques and music theory require consistent practice and lessons. 
+Continuing your lessons and practice year-round will make the best investment and will make you the best piano artist you can be.</p>
+<p>Lessons are given all year round.  We welcome inquiries.</p>
 </div>
 
 </div>
 
-<!-- Second Panel -->
+
+<!-- Contact info -->
 <div id="secondPanel">
-<div style="text-align:left;">
-<h2>About Kathy</h2>
-<img src="assets/knabe.jpg" style="float: right; min-width: 200px; width: 18%; margin:5px 5%;">
-<p>
-As a student, I competed in many state-wide competitions and was awarded the Arion Award for outstanding musician. As a student at Baldwin-Wallace Conservatory,
-I was a flute major and piano minor with a great deal of experience (continuing today) in piano accompaniment. I was proficient enough in sight reading music
-that voice majors asked me to accompany them at their lessons.
-</p>
-<p>
-I have taught scores of students since 1983.  Please see the list of my students' home towns above. Most recently, one of my long-time students was accepted to 5 conservatories.
-</p>
-<p>
-Students play on my new Knabe baby grand piano purchased in 2007.  If you need help buying an instrument, I can help you choose one for a nominal fee. Pianos are recommended
-over keyboards since keyboards do much of the work for the student. I also have names of professional tuners from the area who are reasonably priced.
-</p>
+
+<div style="text-align:center;">
+<h2>Call Us: <span style="font-weight:normal;">(978) 502 - 3373</span></h2>
+<em>or</em>
+<h2>E-Mail Us: <a href="mailto:kathy@kathybarrypiano.com" style="font-weight:normal;">kathy@kathybarrypiano.com</a></h2>
+<p>Call in advance for appointment times.</p>
 </div>
 
+<!-- Google Map -->
+<div id="googleMap" style="width:500px;height:380px;"></div>
 </div>
 
 <!-- Footer -->
@@ -116,6 +92,22 @@ Botlon, MA 01740-1405<br>
 
 </small>
 </footer>
+
+
+<!-- Google Map JS-->
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+
+<script>
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(42.4093229,-71.6086577),
+    zoom:15,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
 
 </body>
 
