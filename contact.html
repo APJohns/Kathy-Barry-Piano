@@ -66,9 +66,6 @@ Continuing your lessons and practice year-round will make the best investment an
 <h2>E-Mail Us: <a href="mailto:kathy@kathybarrypiano.com" style="font-weight:normal;">kathy@kathybarrypiano.com</a></h2>
 <p>Call in advance for appointment times.</p>
 </div>
-
-<!-- Google Map -->
-<div id="googleMap" style="width:500px;height:380px;"></div>
 </div>
 
 <!-- Footer -->
@@ -92,22 +89,6 @@ Botlon, MA 01740-1405<br>
 
 </small>
 </footer>
-
-
-<!-- Google Map JS-->
-<script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyBqaW3blF8d1rZf84_Hxh5R2SVToM6Xly0&callback=initMap"></script>
-
-<script>
-function initialize() {
-  var mapProp = {
-    center:new google.maps.LatLng(42.4093229,-71.6086577),
-    zoom:15,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
-}
-google.maps.event.addDomListener(window, 'load', initialize);
-</script>
 
 </body>
 
