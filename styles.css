@@ -1,3 +1,10 @@
+/*
+	Kathy Barry Piano - Style Sheet
+	Developed by Ashley Johns
+	ashleypjohns@gmail.com
+*/
+
+/* Tag Styling */
 body {
 	font-family: 'PT Sans', sans-serif;
 	margin: 0;
@@ -15,6 +22,30 @@ a {
 	text-decoration: none;
 	color: 	#a35a29;
 }
+footer {
+	height: 100px;
+	background-color: #333333;
+	position: relative;
+	display: block;
+	color: white;
+	padding: 25px 7%;
+}
+address {
+	border-left: 2px solid #a35a29;
+	padding-left: 10px;
+}
+
+/* Navigation Bar Styling */
+#nav {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 20%;
+	opacity: 0.75;
+	font-size: 1.25rem;
+	overflow: hidden;
+	z-index: 0;
+}
 .pianoKey {
 	display: block;
 	background-color: white;
@@ -30,36 +61,19 @@ a {
 .pianoKey:hover {
 	width: 95%;
 }
-footer {
-	height: 100px;
-	background-color: #333333;
-	position: relative;
-	display: block;
-	color: white;
-	padding: 25px 7%;
-}
-address {
-	border-left: 2px solid #a35a29;
-	padding-left: 10px;
-}
-#nav {
+.blackKey {
 	position: absolute;
-	margin: 0;
-	padding: 0;
-	width: 20%;
-	opacity: 0.75;
-	font-size: 20px;
-	overflow: hidden;
-	z-index: 0;
+	display: block;
+	margin-top: -12px;
+	background-color: black;
+	border-radius: 1px 4px 4px 1px;
+	float: left;
+	height: 25px;
+	width: 60%;
+	box-shadow: 1px 5px 5px #888888;
 }
-#quote {
-	flex-basis: 100%;
-	background-color: white;
-	text-align: center;
-	font-size: 30px;
-	padding-bottom: 50px;
-	border-bottom: 1px solid #a35a29;
-}
+
+/* Page Panel Styling */
 #titlePanel {
 	background-image: url("assets/piano.jpg");
 	background-attachment: fixed;
@@ -92,26 +106,12 @@ address {
 	padding: 10px 4% 50px 4%;
 	box-shadow: 0px 0px 15px #555555;
 }
+
+/* Page Element Styling */
 #pageTitle {
 	padding-top: 175px;
 	text-align: center;
 	color: white;
-}
-#testimonials {
-	padding: 25px 4% 100px 4%;
-	background-color: white;
-	text-indent: 12px;
-}
-.blackKey {
-	position: absolute;
-	display: block;
-	margin-top: -12px;
-	background-color: black;
-	border-radius: 1px 4px 4px 1px;
-	float: left;
-	height: 25px;
-	width: 60%;
-	box-shadow: 1px 5px 5px #888888;
 }
 #startButton {
 	display: block;
@@ -134,4 +134,17 @@ address {
 	background-image: url("assets/underlay.png");
 	padding: 25px;
 	border-radius: 20px;
+}
+#quote {
+	flex-basis: 100%;
+	background-color: white;
+	text-align: center;
+	font-size: 30px;
+	padding-bottom: 50px;
+	border-bottom: 1px solid #a35a29;
+}
+#testimonials {
+	padding: 25px 4% 100px 4%;
+	background-color: white;
+	text-indent: 12px;
 }
