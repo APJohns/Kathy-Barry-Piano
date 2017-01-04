@@ -12,7 +12,7 @@ body {
 }
 h1 {
 	font-family: 'Oleo Script', cursive;
-	font-size: 75px;
+	font-size: 3em;
 	margin: 0 5px 20px 5px;
 }
 li {
@@ -79,16 +79,6 @@ address {
 	background-attachment: fixed;
 	height: 675px;
 }
-@media screen and (min-width: 751px) and (max-width: 1280px) {
-	#titlePanel {
-		background-image: url("assets/pianoMid.jpg");
-	}
-}
-@media screen and (max-width: 750px) {
-	#titlePanel {
-		background-image: url("assets/pianoSmall.jpg");
-	}
-}
 #firstPanel {
 	background-image: url("assets/piano.jpg");
 	background-attachment: fixed;
@@ -105,7 +95,9 @@ address {
 	position: relative;
 }
 .panelItem {
-	flex-basis: 40%;
+	flex-wrap: wrap;
+	width: 48%;
+	min-width: 200px;
 }
 #payPanel {
 	text-align: center;
@@ -137,6 +129,12 @@ address {
 #startButton:hover {
 	opacity: 1;
 }
+#kathy {
+	float:right;
+	margin-left:1%;
+	width: 25%;
+	min-width:200px;
+}
 .underlay{
 	display: flex;
 	justify-content: flex-start;
@@ -149,7 +147,7 @@ address {
 	flex-basis: 100%;
 	background-color: white;
 	text-align: center;
-	font-size: 30px;
+	font-size: 1.5em;
 	padding-bottom: 50px;
 	border-bottom: 1px solid #a35a29;
 }
@@ -157,4 +155,71 @@ address {
 	padding: 25px 4% 100px 4%;
 	background-color: white;
 	text-indent: 12px;
+}
+#towns {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+}
+#towns li {
+	padding: 5px 20px;
+}
+
+/* Mobile */
+.openButton {
+    display: none;
+    cursor: pointer;
+    font-size: 2.5em;
+    position: fixed;
+    z-index: 1;
+    transition: 0.5s;
+    padding: 15px;
+}
+.closeButton {
+    position: absolute;
+    font-size: 2em;
+    margin-left: 140px;
+    margin-top: -70px;
+}
+#mobileNav {
+    display: none;
+    position: fixed;
+    background-color: #292929;
+    width: 0;
+    height: 100%;
+    font-size: 2em;
+    z-index: 2;
+    overflow-x: hidden;
+    padding-top: 50px;
+    transition: 0.5s;
+    opacity: 0.95;
+}
+#mobileNav a {
+    padding: 15px 20px;
+}
+
+@media (max-width: 640px) {
+	#nav {
+		display: none;
+	}
+	#mobileNav {
+		display: block;
+	}
+	.openButton {
+		display: block;
+	}
+	.panelItem {
+		width: 100%;
+	}
+}
+
+@media (min-width: 751px) and (max-width: 1280px) {
+	#titlePanel {
+		background-image: url("assets/pianoMid.jpg");
+	}
+}
+@media (max-width: 750px) {
+	#titlePanel {
+		background-image: url("assets/pianoSmall.jpg");
+	}
 }

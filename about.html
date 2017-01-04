@@ -22,110 +22,125 @@
 
 <!-- Body begins -->
 <body>
-<!-- Navigation -->
-<strong>
-<ul id="nav">
-	<!-- Linked Keys -->
-	<a href="index.html"><li class="pianoKey">Home</li></a>
-	<span class="blackKey"></span>
-	<a href="services.html"><li class="pianoKey">Services</li></a>
-	<span class="blackKey"></span>
-	<a href="about.html"><li class="pianoKey">About</li></a>
-	<span class="blackKey"></span>
-	<a href="contact.html"><li class="pianoKey">Contact</li></a>
-	<!-- Extra Keys -->
-	<li class="pianoKey"></li>
-	<span class="blackKey"></span>
-	<li class="pianoKey"></li>
-	<span class="blackKey"></span>
-	<li class="pianoKey"></li>
-	<li class="pianoKey"></li>
-	<span class="blackKey"></span>
-	<li class="pianoKey"></li>
-	<span class="blackKey"></span>
-	<li class="pianoKey"></li>
-</ul>
-</strong>
+	<!-- Navigation -->
+	<strong>
+		<ul id="nav">
+			<!-- Linked Keys -->
+			<a href="index.html"><li class="pianoKey">Home</li></a>
+			<span class="blackKey"></span>
+			<a href="services.html"><li class="pianoKey">Services</li></a>
+			<span class="blackKey"></span>
+			<a href="about.html"><li class="pianoKey">About</li></a>
+			<span class="blackKey"></span>
+			<a href="contact.html"><li class="pianoKey">Contact</li></a>
+			<!-- Extra Keys -->
+			<li class="pianoKey"></li>
+			<span class="blackKey"></span>
+			<li class="pianoKey"></li>
+			<span class="blackKey"></span>
+			<li class="pianoKey"></li>
+			<li class="pianoKey"></li>
+			<span class="blackKey"></span>
+			<li class="pianoKey"></li>
+			<span class="blackKey"></span>
+			<li class="pianoKey"></li>
+		</ul>
+	</strong>
+
+	<!-- Mobile Nav -->
+	<div id="mobileNav">
+		<a href="javascript:void(0)" class="closeButton" onclick="closeNav()">&times;</a>
+		<a href="index.html">Home</a>
+		<a href="services.html">Services</a>
+		<a href="about.html">About</a>
+		<a href="contact.html">Contact</a>
+	</div>
+
+	<span class="openButton" id="openButton" onclick="openNav()">&#9776;</span>
+
+	<!-- JavaScript for mobile nav -->
+	<script>
+		function openNav() {
+			document.getElementById("mobileNav").style.width = "200px";
+			document.getElementById("mobileNav").style.borderRight = "2px solid #a35a29";
+            document.getElementById("openButton").style.opacity = "0";
+		}
+		function closeNav() {
+			document.getElementById("mobileNav").style.width = "0px";
+			document.getElementById("mobileNav").style.borderRight = "none";
+            document.getElementById("openButton").style.opacity = "1";
+		}
+	</script>
 
 
-<!-- Top Panel -->
-<div id="firstPanel">
+	<!-- Top Panel -->
+	<div id="firstPanel">
 
-<h1>About</h1>
-<!-- Offered Sevices -->
-<div class="underlay">
-<h2 style="align-self:center;">Towns Served</h2>
-<ul>
-	<li>Bolton [ 01740 ]</li>
-	<li>Hudson [ 01749 ]</li>
-	<li>Worcester [ 01601 ]</li>
-</ul>
-<ul>
-	<li>Boylston [ 01505 ]</li>
-	<li>Lancaster [ 01523 ]</li>
-</ul>
-<ul>
-	<li>Berlin [ 01503 ]</li>
-	<li>Leominster [ 01453 ]</li>
-</ul>
-<ul>
-	<li>Clinton [ 01510 ]</li>
-	<li>Marlborough [ 01752 ]</li>
-</ul>
-<ul>
-	<li>Harvard [ 01451 ]</li>
-	<li>Stow [ 01775 ]</li>
-</ul>
-<ul>
-	<li>Holden [ 01520 ]</li>
-	<li>Westborough [ 01580 ]</li>
-</ul>
-</div>
+		<h1>About</h1>
+		<!-- Offered Sevices -->
+		<div class="underlay">
+			<h2 style="align-self:center;">Towns Served</h2>
+			<ul id="towns">
+				<li>Bolton<br>01740</li>
+				<li>Hudson<br>01749</li>
+				<li>Worcester<br>01601</li>
+				<li>Boylston<br>01505</li>
+				<li>Lancaster<br>01523</li>
+				<li>Berlin<br>01503</li>
+				<li>Leominster<br>01453</li>
+				<li>Clinton<br>01510</li>
+				<li>Marlborough<br>01752</li>
+				<li>Harvard<br>01451</li>
+				<li>Stow<br>01775</li>
+				<li>Holden<br>01520</li>
+				<li>Westborough<br>01580</li>
+			</ul>
+		</div>
 
-</div>
+	</div>
 
-<!-- Second Panel -->
-<div id="secondPanel">
-<div style="text-align:left;">
-<h2>About Kathy</h2>
-<img src="assets/knabe.jpg" style="float: right; min-width: 200px; width: 18%; margin:5px 5%;">
-<p>
-As a student, I competed in many state-wide competitions and was awarded the Arion Award for outstanding musician. As a student at Baldwin-Wallace Conservatory,
-I was a flute major and piano minor with a great deal of experience (continuing today) in piano accompaniment. I was proficient enough in sight reading music
-that voice majors asked me to accompany them at their lessons.
-</p>
-<p>
-I have taught scores of students since 1983.  Please see the list of my students' home towns above. Most recently, one of my long-time students was accepted to 5 conservatories.
-</p>
-<p>
-Students play on my Knabe baby grand piano purchased in 2007.  If you need help buying an instrument, I can help you choose one for a nominal fee. Pianos are recommended
-over keyboards since keyboards do much of the work for the student. I also have names of professional tuners from the area who are reasonably priced.
-</p>
-</div>
+	<!-- Second Panel -->
+	<div id="secondPanel">
+		<div style="text-align:left;">
+			<h2>About Kathy</h2>
+			<img src="assets/knabe.jpg" style="float: right; min-width: 200px; width: 18%; margin:5px 5%;">
+			<p>
+				As a student, I competed in many state-wide competitions and was awarded the Arion Award for outstanding musician. As a student at Baldwin-Wallace Conservatory,
+				I was a flute major and piano minor with a great deal of experience (continuing today) in piano accompaniment. I was proficient enough in sight reading music
+				that voice majors asked me to accompany them at their lessons.
+			</p>
+			<p>
+				I have taught scores of students since 1983.  Please see the list of my students' home towns above. Most recently, one of my long-time students was accepted to 5 conservatories.
+			</p>
+			<p>
+				Students play on my Knabe baby grand piano purchased in 2007.  If you need help buying an instrument, I can help you choose one for a nominal fee. Pianos are recommended
+				over keyboards since keyboards do much of the work for the student. I also have names of professional tuners from the area who are reasonably priced.
+			</p>
+		</div>
 
-</div>
+	</div>
 
-<!-- Footer -->
-<footer>
-<small>
+	<!-- Footer -->
+	<footer>
+		<small>
 
-<!-- Address info -->
-<div style="float:left;">
-<address>
-Kathy Barry - Piano Teacher<br>
-Botlon, MA 01740-1405<br>
-978-502-3373<br>
-<a href="mailto:kathy@kathybarrypiano.com">kathy@kathybarrypiano.com</a>
-</address>
-</div>
+			<!-- Address info -->
+			<div style="float:left;">
+				<address>
+					Kathy Barry - Piano Teacher<br>
+					Botlon, MA 01740-1405<br>
+					978-502-3373<br>
+					<a href="mailto:kathy@kathybarrypiano.com">kathy@kathybarrypiano.com</a>
+				</address>
+			</div>
 
-<!-- Copyright -->
-<span style="float:right;">
-&copy; Copyright 2016 Kathy Barry - Piano Teacher. All rights reserved.
-</span>
+			<!-- Copyright -->
+			<span style="float:right;">
+				&copy; Copyright 2016 Kathy Barry - Piano Teacher. All rights reserved.
+			</span>
 
-</small>
-</footer>
+		</small>
+	</footer>
 
 </body>
 

@@ -22,99 +22,124 @@
 
 <!-- Body begins -->
 <body>
-<!-- Navigation -->
-<strong>
-<ul id="nav">
-	<!-- Linked Keys -->
-	<a href="index.html"><li class="pianoKey">Home</li></a>
-	<span class="blackKey"></span>
-	<a href="services.html"><li class="pianoKey">Services</li></a>
-	<span class="blackKey"></span>
-	<a href="about.html"><li class="pianoKey">About</li></a>
-	<span class="blackKey"></span>
-	<a href="contact.html"><li class="pianoKey">Contact</li></a>
-	<!-- Extra Keys -->
-	<li class="pianoKey"></li>
-	<span class="blackKey"></span>
-	<li class="pianoKey"></li>
-	<span class="blackKey"></span>
-	<li class="pianoKey"></li>
-	<li class="pianoKey"></li>
-	<span class="blackKey"></span>
-	<li class="pianoKey"></li>
-	<span class="blackKey"></span>
-	<li class="pianoKey"></li>
-</ul>
-</strong>
+	<!-- Navigation -->
+	<strong>
+		<ul id="nav">
+			<!-- Linked Keys -->
+			<a href="index.html"><li class="pianoKey">Home</li></a>
+			<span class="blackKey"></span>
+			<a href="services.html"><li class="pianoKey">Services</li></a>
+			<span class="blackKey"></span>
+			<a href="about.html"><li class="pianoKey">About</li></a>
+			<span class="blackKey"></span>
+			<a href="contact.html"><li class="pianoKey">Contact</li></a>
+			<!-- Extra Keys -->
+			<li class="pianoKey"></li>
+			<span class="blackKey"></span>
+			<li class="pianoKey"></li>
+			<span class="blackKey"></span>
+			<li class="pianoKey"></li>
+			<li class="pianoKey"></li>
+			<span class="blackKey"></span>
+			<li class="pianoKey"></li>
+			<span class="blackKey"></span>
+			<li class="pianoKey"></li>
+		</ul>
+	</strong>
+
+	<!-- Mobile Nav -->
+	<div id="mobileNav">
+		<a href="javascript:void(0)" class="closeButton" onclick="closeNav()">&times;</a>
+		<a href="index.html">Home</a>
+		<a href="services.html">Services</a>
+		<a href="about.html">About</a>
+		<a href="contact.html">Contact</a>
+	</div>
+
+	<span class="openButton" id="openButton" onclick="openNav()">&#9776;</span>
+
+	<!-- JavaScript for mobile nav -->
+	<script>
+		function openNav() {
+			document.getElementById("mobileNav").style.width = "200px";
+			document.getElementById("mobileNav").style.borderRight = "2px solid #a35a29";
+            document.getElementById("openButton").style.opacity = "0";
+		}
+		function closeNav() {
+			document.getElementById("mobileNav").style.width = "0px";
+			document.getElementById("mobileNav").style.borderRight = "none";
+            document.getElementById("openButton").style.opacity = "1";
+		}
+	</script>
 
 
-<!-- Top Panel -->
-<div id="firstPanel">
+	<!-- Top Panel -->
+	<div id="firstPanel">
 
-<h1>Services</h1>
+		<h1>Services</h1>
 
-<!-- Offered Sevices -->
-<div class="underlay">
-<h2 style="align-self:center;">How I help my students</h2>
-<ul>
-	<li>I stock all levels of piano methodologies, sheet music, theory books, and staff books. I sell them at retail price to ensure the student has the correct music. Also parents like not having to go buy music.</li>
-	<li>I do extra lessons for an upcoming event, such as auditions at music school or accompanying a group. Usually those are on Saturdays.</li>
-	<li>I can assist you in shopping for and buying an appropriate piano.</li>
-</ul>
-</div>
+		<!-- Offered Sevices -->
+		<div class="underlay">
+			<h2 style="align-self:center;">How I help my students</h2>
+			<ul>
+				<li>I stock all levels of piano methodologies, sheet music, theory books, and staff books. I sell them at retail price to ensure the student has the correct music. Also parents like not having to go buy music.</li>
+				<li>I do extra lessons for an upcoming event, such as auditions at music school or accompanying a group. Usually those are on Saturdays.</li>
+				<li>I can assist you in shopping for and buying an appropriate piano.</li>
+			</ul>
+		</div>
 
-</div>
+	</div>
 
-<!-- Second Panel -->
-<div id="secondPanel">
+	<!-- Second Panel -->
+	<div id="secondPanel">
 
-<!-- More information on how to get started, and what to expect -->
-<div class="panelItem" style="border-left: 2px solid #a35a29; padding-left:2%;">
-<h2>First Lesson</h2>
-<p>
-Your first lesson is free. It is used to see if the student is a good fit to learn piano. Please call for available times for your student's trial lesson.
-Lesson times are after school and for older students, in the evening.
-</p>
-<p>
-For beginners, a 1/2 hour lesson is recommended. As the student advances, eventually they will have a 45 minute lesson.
-</p>
+		<!-- More information on how to get started, and what to expect -->
+		<div class="panelItem" style="border-left: 2px solid #a35a29; padding-left:2%;">
+			<h2>First Lesson</h2>
+			<p>
+				Your first lesson is free. It is used to see if the student is a good fit to learn piano. Please call for available times for your student's trial lesson.
+				Lesson times are after school and for older students, in the evening.
+			</p>
+			<p>
+				For beginners, a 1/2 hour lesson is recommended. As the student advances, eventually they will have a 45 minute lesson.
+			</p>
 
-<h2>Cancellations</h2>
-<p>
-Before committing to a lesson time, make sure you have a schedule of your student's activities. I require 24 hours notice for cancellation, except for illness or an emergency. I am willing to make up the missed lesson at a mutually convenient time before the end of the month. You <strong>will be billed</strong> for missed lessons unless resulting from an emergency or illness.
-</p>
-</div>
+			<h2>Cancellations</h2>
+			<p>
+				Before committing to a lesson time, make sure you have a schedule of your student's activities. I require 24 hours notice for cancellation, except for illness or an emergency. I am willing to make up the missed lesson at a mutually convenient time before the end of the month. You <strong>will be billed</strong> for missed lessons unless resulting from an emergency or illness.
+			</p>
+		</div>
 
-<div class="panelItem" style="border-left: 2px solid #a35a29; padding-left:2%;">
-<h2>Logistics</h2>
-<p>
-There is parking in front of my double garage doors. The house is very private with a large front yard so siblings may come as long as they're quiet; or they can play outside. Some parents sit across the hall from the piano room and do work or read, and others prefer to sit in the car. If siblings who are both taking lessons are there at the same time, one student usually sits in the other room while the other has a lesson.
-</p>
-</div>
+		<div class="panelItem" style="border-left: 2px solid #a35a29; padding-left:2%;">
+			<h2>Logistics</h2>
+			<p>
+			There is parking in front of my double garage doors. The house is very private with a large front yard so siblings may come as long as they're quiet; or they can play outside. Some parents sit across the hall from the piano room and do work or read, and others prefer to sit in the car. If siblings who are both taking lessons are there at the same time, one student usually sits in the other room while the other has a lesson.
+			</p>
+		</div>
 
-</div>
+	</div>
 
-<!-- Footer -->
-<footer>
-<small>
+	<!-- Footer -->
+	<footer>
+		<small>
 
-<!-- Address info -->
-<div style="float:left;">
-<address>
-Kathy Barry - Piano Teacher<br>
-Botlon, MA 01740-1405<br>
-978-502-3373<br>
-<a href="mailto:kathy@kathybarrypiano.com">kathy@kathybarrypiano.com</a>
-</address>
-</div>
+		<!-- Address info -->
+		<div style="float:left;">
+			<address>
+				Kathy Barry - Piano Teacher<br>
+				Botlon, MA 01740-1405<br>
+				978-502-3373<br>
+				<a href="mailto:kathy@kathybarrypiano.com">kathy@kathybarrypiano.com</a>
+			</address>
+		</div>
 
-<!-- Copyright -->
-<span style="float:right;">
-&copy; Copyright 2016 Kathy Barry - Piano Teacher. All rights reserved.
-</span>
+		<!-- Copyright -->
+		<span style="float:right;">
+			&copy; Copyright 2016 Kathy Barry - Piano Teacher. All rights reserved.
+		</span>
 
-</small>
-</footer>
+		</small>
+	</footer>
 
 </body>
 

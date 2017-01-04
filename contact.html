@@ -22,74 +22,99 @@
 
 <!-- Body begins -->
 <body>
-<!-- Navigation -->
-<strong>
-<ul id="nav">
-	<!-- Linked Keys -->
-	<a href="index.html"><li class="pianoKey">Home</li></a>
-	<span class="blackKey"></span>
-	<a href="services.html"><li class="pianoKey">Services</li></a>
-	<span class="blackKey"></span>
-	<a href="about.html"><li class="pianoKey">About</li></a>
-	<span class="blackKey"></span>
-	<a href="contact.html"><li class="pianoKey">Contact</li></a>
-	<!-- Extra Keys -->
-	<li class="pianoKey"></li>
-	<span class="blackKey"></span>
-	<li class="pianoKey"></li>
-	<span class="blackKey"></span>
-	<li class="pianoKey"></li>
-	<li class="pianoKey"></li>
-	<span class="blackKey"></span>
-	<li class="pianoKey"></li>
-	<span class="blackKey"></span>
-	<li class="pianoKey"></li>
-</ul>
-</strong>
+	<!-- Navigation -->
+	<strong>
+		<ul id="nav">
+			<!-- Linked Keys -->
+			<a href="index.html"><li class="pianoKey">Home</li></a>
+			<span class="blackKey"></span>
+			<a href="services.html"><li class="pianoKey">Services</li></a>
+			<span class="blackKey"></span>
+			<a href="about.html"><li class="pianoKey">About</li></a>
+			<span class="blackKey"></span>
+			<a href="contact.html"><li class="pianoKey">Contact</li></a>
+			<!-- Extra Keys -->
+			<li class="pianoKey"></li>
+			<span class="blackKey"></span>
+			<li class="pianoKey"></li>
+			<span class="blackKey"></span>
+			<li class="pianoKey"></li>
+			<li class="pianoKey"></li>
+			<span class="blackKey"></span>
+			<li class="pianoKey"></li>
+			<span class="blackKey"></span>
+			<li class="pianoKey"></li>
+		</ul>
+	</strong>
+
+	<!-- Mobile Nav -->
+	<div id="mobileNav">
+		<a href="javascript:void(0)" class="closeButton" onclick="closeNav()">&times;</a>
+		<a href="index.html">Home</a>
+		<a href="services.html">Services</a>
+		<a href="about.html">About</a>
+		<a href="contact.html">Contact</a>
+	</div>
+
+	<span class="openButton" id="openButton" onclick="openNav()">&#9776;</span>
+
+	<!-- JavaScript for mobile nav -->
+	<script>
+		function openNav() {
+			document.getElementById("mobileNav").style.width = "200px";
+			document.getElementById("mobileNav").style.borderRight = "2px solid #a35a29";
+            document.getElementById("openButton").style.opacity = "0";
+		}
+		function closeNav() {
+			document.getElementById("mobileNav").style.width = "0px";
+			document.getElementById("mobileNav").style.borderRight = "none";
+            document.getElementById("openButton").style.opacity = "1";
+		}
+	</script>
 
 
-<!-- Top Panel -->
-<div id="firstPanel">
+	<!-- Top Panel -->
+	<div id="firstPanel">
 
-<h1>Contact</h1>
+		<h1>Contact</h1>
 
-<!-- Underlay text -->
-<div class="underlay">
-<p>Learning to play the piano is not like learning history: playing the piano, learning scales, techniques and music theory require consistent practice and lessons. 
-Continuing your lessons and practice year-round will make the best investment and will make you the best piano artist you can be.</p>
-<p>Lessons are given all year round.  We welcome inquiries.</p>
-</div>
+		<!-- Underlay text -->
+		<div class="underlay">
+			<p>Learning to play the piano is not like learning history: playing the piano, learning scales, techniques and music theory require consistent practice and lessons. 
+				Continuing your lessons and practice year-round will make the best investment and will make you the best piano artist you can be.</p>
+			<p>Lessons are given all year round.  We welcome inquiries.</p>
+		</div>
 
-</div>
+	</div>
 
 
-<!-- Contact info -->
-<div id="secondPanel" style="flex-direction:column;align-items:center;">
-<h2 style="color:#a35a29;">Call us to book your first lesson!</h2>
-<img src="assets/card.jpg" style="width:45%;min-width:350px;">
-</div>
+	<!-- Contact info -->
+	<div id="secondPanel" style="flex-direction:column;align-items:center;">
+		<h2 style="color:#a35a29;">Call us to book your first lesson!</h2>
+		<img src="assets/card.jpg" style="width:45%;min-width:350px;">
+	</div>
 
-<!-- Footer -->
-<footer>
-<small>
+	<!-- Footer -->
+	<footer>
+		<small>
 
-<!-- Address info -->
-<div style="float:left;">
-<address>
-Kathy Barry - Piano Teacher<br>
-Botlon, MA 01740-1405<br>
-978-502-3373<br>
-<a href="mailto:kathy@kathybarrypiano.com">kathy@kathybarrypiano.com</a>
-</address>
-</div>
+			<!-- Address info -->
+			<div style="float:left;">
+				<address>
+					Kathy Barry - Piano Teacher<br>
+					Botlon, MA 01740-1405<br>
+					978-502-3373<br>
+					<a href="mailto:kathy@kathybarrypiano.com">kathy@kathybarrypiano.com</a>
+				</address>
+			</div>
 
-<!-- Copyright -->
-<span style="float:right;">
-&copy; Copyright 2016 Kathy Barry - Piano Teacher. All rights reserved.
-</span>
+			<!-- Copyright -->
+			<span style="float:right;">
+				&copy; Copyright 2016 Kathy Barry - Piano Teacher. All rights reserved.
+			</span>
 
-</small>
-</footer>
+		</small>
+	</footer>
 
 </body>
 

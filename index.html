@@ -22,164 +22,186 @@
 <!-- Body Begins -->
 <body>
 
-<!-- Navigation -->
-<strong>
-<ul id="nav">
-	<!-- Linked Keys -->
-	<a href="index.html"><li class="pianoKey">Home</li></a>
-	<span class="blackKey"></span>
-	<a href="services.html"><li class="pianoKey">Services</li></a>
-	<span class="blackKey"></span>
-	<a href="about.html"><li class="pianoKey">About</li></a>
-	<span class="blackKey"></span>
-	<a href="contact.html"><li class="pianoKey">Contact</li></a>
-	<!-- Extra Keys -->
-	<li class="pianoKey"></li>
-	<span class="blackKey"></span>
-	<li class="pianoKey"></li>
-	<span class="blackKey"></span>
-	<li class="pianoKey"></li>
-	<li class="pianoKey"></li>
-	<span class="blackKey"></span>
-	<li class="pianoKey"></li>
-	<span class="blackKey"></span>
-	<li class="pianoKey"></li>
-</ul>
-</strong>
+	<!-- Navigation -->
+	<strong>
+		<ul id="nav">
+			<!-- Linked Keys -->
+			<a href="index.html"><li class="pianoKey">Home</li></a>
+			<span class="blackKey"></span>
+			<a href="services.html"><li class="pianoKey">Services</li></a>
+			<span class="blackKey"></span>
+			<a href="about.html"><li class="pianoKey">About</li></a>
+			<span class="blackKey"></span>
+			<a href="contact.html"><li class="pianoKey">Contact</li></a>
+			<!-- Extra Keys -->
+			<li class="pianoKey"></li>
+			<span class="blackKey"></span>
+			<li class="pianoKey"></li>
+			<span class="blackKey"></span>
+			<li class="pianoKey"></li>
+			<li class="pianoKey"></li>
+			<span class="blackKey"></span>
+			<li class="pianoKey"></li>
+			<span class="blackKey"></span>
+			<li class="pianoKey"></li>
+		</ul>
+	</strong>
 
-<!-- First Panel -->
-<div id="titlePanel">
+	<!-- Mobile Nav -->
+	<div id="mobileNav">
+		<a href="javascript:void(0)" class="closeButton" onclick="closeNav()">&times;</a>
+		<a href="index.html">Home</a>
+		<a href="services.html">Services</a>
+		<a href="about.html">About</a>
+		<a href="contact.html">Contact</a>
+	</div>
 
-<div id="pageTitle">
-<h1>Kathy Barry</h1>
-<h2>Piano Teacher</h2>
-<a href="contact.html" id="startButton">Sign Me Up!</a>
-</div>
+	<span class="openButton" id="openButton" onclick="openNav()">&#9776;</span>
 
-</div>
+	<!-- JavaScript for mobile nav -->
+	<script>
+		function openNav() {
+			document.getElementById("mobileNav").style.width = "200px";
+			document.getElementById("mobileNav").style.borderRight = "2px solid #a35a29";
+            document.getElementById("openButton").style.opacity = "0";
+		}
+		function closeNav() {
+			document.getElementById("mobileNav").style.width = "0px";
+			document.getElementById("mobileNav").style.borderRight = "none";
+            document.getElementById("openButton").style.opacity = "1";
+		}
+	</script>
 
+	<!-- First Panel -->
+	<div id="titlePanel">
 
-<!-- Introduction Panel -->
-<div id="secondPanel">
+		<div id="pageTitle">
+			<h1>Kathy Barry</h1>
+			<h2>Piano Teacher</h2>
+			<a href="contact.html" id="startButton">Sign Me Up!</a>
+		</div>
 
-<p id="quote"><em>"Kathy truly created a life-shaping difference for me..."</em><span style="font-size: 18px;"><sub> -Robb, Former Student</sub></span></p>
-
-<!-- Introduction -->
-<div class="panelItem">
-
-<h2>Introduction</h2>
-<img src="assets/kathy.jpg" width="40%" style="float:right; margin-left:1%; min-width:200px;">
-<p>
-Kathy is an experienced piano teacher with over thirty years of teaching all levels of students from 5 years old to over ninety! 
-</p>
-<p>
-Because students have different learning styles, a variety of methodologies are used. New students are given a free 1/2 hour
-assessment lesson to see if they are ready to learn as well as how they learn. 
-</p>
-
-<h2>Get in Touch!</h2>
-<p>
-Call us at 978-502-3373<br>
-Our full contact information is at the "Contact" tab.
-</p>
-
-</div>
+	</div>
 
 
-<!-- Lesson bullet points -->
-<div class="panelItem">
+	<!-- Introduction Panel -->
+	<div id="secondPanel">
 
-<h2>What Lessons Include</h2>
-	<ul>
-		<li>Scales and exercises to build technique.</li>
-		<li>Learning to read music, first with easy books, and eventually advanced music.</li>
-		<li>Theory homework- this helps students speed up the process of reading and counting.</li>
-	</ul>
+		<p id="quote"><em>"Kathy truly created a life-shaping difference for me..."</em><span style="font-size: 18px;"><sub> -Robb, Former Student</sub></span></p>
 
-<h2>Is your student ready to learn to play?</h2>
-	<ul>
-		<li>The student should want to learn to play the piano and be willing to practice daily.</li>
-		<li>A fundamental understanding of basic counting is essential. The student <strong>needs</strong> to be able to add. If they are too young, they become frustrated.</li>
-		<li>Basic reading skills. Parents can read instructions I write in a lesson book as long as the student is willing
-			to follow them. More important is the student's ability to recognize notes on the staff.</li>
-		<li>The student's hand size has to be large enough to reach adjacent keys and be able to tuck the thumb under,
-			especially in scales. Most of the time, these skills and hand size come together around the age of 7. I have taught
-			gifted students who were younger, but hand size and attention span are essential.</li>
-	</ul>
-</div>
+		<!-- Introduction -->
+		<div class="panelItem">
 
-</div>
+			<h2>Introduction</h2>
+			<img src="assets/kathy.jpg" id="kathy">
+			<p>
+				Kathy is an experienced piano teacher with over thirty years of teaching all levels of students from 5 years old to over ninety! 
+			</p>
+			<p>
+				Because students have different learning styles, a variety of methodologies are used. New students are given a free 1/2 hour
+				assessment lesson to see if they are ready to learn as well as how they learn. 
+			</p>
 
-<!-- Payment Options -->
-<div id="payPanel">
+		<!-- Lesson bullet points -->
 
-<h2 style="font-size:30px;">Pricing</h2>
-<p style="font-size:25px;">
-Lessons are either 30 or 45 minutes. Availability is from 2pm to 6pm. We accept cash or check (check preferred).
-</p>
-<p style="font-size:25px;">
-$30 / 30 minute lesson ($27 with discount applied*)<br>
-$45 / 45 minute lesson ($40.50 with discount applied*)
-</p>
-<p style="font-size:20px;">
-The first trial lesson is <strong>free</strong> of charge.
-</p>
+			<h2>What Lessons Include</h2>
+			<ul>
+				<li>Scales and exercises to build technique.</li>
+				<li>Learning to read music, first with easy books, and eventually advanced music.</li>
+				<li>Theory homework- this helps students speed up the process of reading and counting.</li>
+			</ul>
+		</div>
+		<div class="panelItem">
+			<h2>Is your student ready to learn to play?</h2>
+			<ul>
+				<li>The student should want to learn to play the piano and be willing to practice daily.</li>
+				<li>A fundamental understanding of basic counting is essential. The student <strong>needs</strong> to be able to add. If they are too young, they become frustrated.</li>
+				<li>Basic reading skills. Parents can read instructions I write in a lesson book as long as the student is willing
+					to follow them. More important is the student's ability to recognize notes on the staff.</li>
+				<li>The student's hand size has to be large enough to reach adjacent keys and be able to tuck the thumb under,
+					especially in scales. Most of the time, these skills and hand size come together around the age of 7. I have taught
+					gifted students who were younger, but hand size and attention span are essential.</li>
+			</ul>
+			<h2>Get in Touch!</h2>
+			<p>
+				Call us at 978-502-3373<br>
+				Our full contact information is at the "Contact" tab.
+			</p>
 
-<p>
-*Discount* 10% off if full month is paid on the <strong>first</strong> lesson of the month. 10% off for any additional family member.
-</p>
+		</div>
 
-</div>
+	</div>
 
+	<!-- Payment Options -->
+	<div id="payPanel">
 
-<!-- Testimonials -->
-<div id="testimonials">
+		<h2 style="font-size:30px;">Pricing</h2>
+		<p style="font-size:25px;">
+			Lessons are either 30 or 45 minutes. Availability is from 2pm to 6pm. We accept cash or check (check preferred).
+		</p>
+		<p style="font-size:25px;">
+			$30 / 30 minute lesson ($27 with discount applied*)<br>
+			$45 / 45 minute lesson ($40.50 with discount applied*)
+		</p>
+		<p style="font-size:20px;">
+			The first trial lesson is <strong>free</strong> of charge.
+		</p>
 
-<h2>Testimonials</h2>
-<p style="margin:6px;">
-"Kathy truly created a life-shaping difference for me. I began some simple piano lessons with her when I was ten, hungry to learn. Over the next eight years that ensued, Kathy opened a door for me into the world of music. Any student that takes up with her will not just learn to play a few simple tunes, but will be surprised to find themselves developing into a full-grown musician. Learning to play the piano involves far more than pressing a few keys, and Kathy makes sure every student understands that, no matter the age. She even gave herself the title of 'The Bear of Music Theory.' If you don't know what music theory is, don't worry. She'll pound it into your brain till it comes out your ears; it really will make you a better musician.
-</p>
-<p style="margin:6px;">
-With more anecdotes, stories, and pieces of advice than I've ever seen in a person before or since, Kathy has an entirely unique method of teaching. Her lessons develop character, patience, and above all the desire to work hard. She has an ear for those who practice and those who don't, so one learns quickly to put in the effort between lessons.
-</p>
-<p style="margin:6px;">
-As for myself, I've actually applied this skill to my education through high school as well. Staying committed to Kathy and my musical studies with her made me a more well-rounded student, and for that I graciously thank her. I will be going off to Miami University (Oxford, Ohio) this fall to study Music Composition. Without her, I would never have been the musician I am today, with dreams, goals, and plans for my life ahead of me. I strongly urge every soul interested in taking up the piano to begin studies with Kathy, because every student deserves to have that sparkle in their eye as I have had ever since my first lesson."
-</p>
-<span style="float:right;margin-right:10%;"><strong>- Robb, Former Student</strong></span>
-<br>
-<br>
-<br>
-<p style="margin:6px;">
-"I was a student of Kathy Barry for about nine years. When I started, I could barely reach the keys! I started off learning simple scales and tunes. Kathy's teaching method emphasizes the importance of theory and the understanding of music. She doesn't just teach you to play the notes of a song, she teaches you to understand the music you're playing. This is crucial to be the best piano player that you can be. Learning the piano through Kathy taught me a lot about music, and gave me a skill that will stick with me for the rest of my life. It's like riding a bike, it stays with you.
-</p>
-<p style="margin:6px;">
-The weekly piano lessons with Kathy were a significant part of my life. Even if I didn't realize it at the time, learning to play the piano properly with Kathy impacted who I am today.""
-</p>
-<span style="float:right;margin-right:10%;"><strong>- Ash, Former Student</strong></span>
-</div>
+		<p>
+			*Discount* 10% off if full month is paid on the <strong>first</strong> lesson of the month. 10% off for any additional family member.
+		</p>
+
+	</div>
 
 
-<!-- Footer -->
-<footer>
-<small>
+	<!-- Testimonials -->
+	<div id="testimonials">
 
-<!-- Address info -->
-<div style="float:left;">
-<address>
-Kathy Barry - Piano Teacher<br>
-Botlon, MA 01740-1405<br>
-978-502-3373<br>
-<a href="mailto:kathy@kathybarrypiano.com">kathy@kathybarrypiano.com</a>
-</address>
-</div>
+		<h2>Testimonials</h2>
+		<p style="margin:6px;">
+			"Kathy truly created a life-shaping difference for me. I began some simple piano lessons with her when I was ten, hungry to learn. Over the next eight years that ensued, Kathy opened a door for me into the world of music. Any student that takes up with her will not just learn to play a few simple tunes, but will be surprised to find themselves developing into a full-grown musician. Learning to play the piano involves far more than pressing a few keys, and Kathy makes sure every student understands that, no matter the age. She even gave herself the title of 'The Bear of Music Theory.' If you don't know what music theory is, don't worry. She'll pound it into your brain till it comes out your ears; it really will make you a better musician.
+		</p>
+		<p style="margin:6px;">
+			With more anecdotes, stories, and pieces of advice than I've ever seen in a person before or since, Kathy has an entirely unique method of teaching. Her lessons develop character, patience, and above all the desire to work hard. She has an ear for those who practice and those who don't, so one learns quickly to put in the effort between lessons.
+		</p>
+		<p style="margin:6px;">
+			As for myself, I've actually applied this skill to my education through high school as well. Staying committed to Kathy and my musical studies with her made me a more well-rounded student, and for that I graciously thank her. I will be going off to Miami University (Oxford, Ohio) this fall to study Music Composition. Without her, I would never have been the musician I am today, with dreams, goals, and plans for my life ahead of me. I strongly urge every soul interested in taking up the piano to begin studies with Kathy, because every student deserves to have that sparkle in their eye as I have had ever since my first lesson."
+		</p>
+		<span style="float:right;margin-right:10%;"><strong>- Robb, Former Student</strong></span>
+		<br>
+		<br>
+		<br>
+		<p style="margin:6px;">
+			"I was a student of Kathy Barry for about nine years. When I started, I could barely reach the keys! I started off learning simple scales and tunes. Kathy's teaching method emphasizes the importance of theory and the understanding of music. She doesn't just teach you to play the notes of a song, she teaches you to understand the music you're playing. This is crucial to be the best piano player that you can be. Learning the piano through Kathy taught me a lot about music, and gave me a skill that will stick with me for the rest of my life. It's like riding a bike, it stays with you.
+		</p>
+		<p style="margin:6px;">
+			The weekly piano lessons with Kathy were a significant part of my life. Even if I didn't realize it at the time, learning to play the piano properly with Kathy impacted who I am today.""
+		</p>
+		<span style="float:right;margin-right:10%;"><strong>- Ash, Former Student</strong></span>
+	</div>
 
-<!-- Copyright -->
-<span style="float:right;">
-&copy; Copyright 2016 Kathy Barry - Piano Teacher. All rights reserved.
-</span>
 
-</small>
-</footer>
+	<!-- Footer -->
+	<footer>
+		<small>
+
+		<!-- Address info -->
+		<div style="float:left;">
+			<address>
+				Kathy Barry - Piano Teacher<br>
+				Botlon, MA 01740-1405<br>
+				978-502-3373<br>
+				<a href="mailto:kathy@kathybarrypiano.com">kathy@kathybarrypiano.com</a>
+			</address>
+		</div>
+
+		<!-- Copyright -->
+		<span style="float:right;">
+			&copy; Copyright 2016 Kathy Barry - Piano Teacher. All rights reserved.
+		</span>
+
+		</small>
+	</footer>
 
 </body>
 
