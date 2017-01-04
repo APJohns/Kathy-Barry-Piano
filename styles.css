@@ -88,6 +88,9 @@ address {
 }
 #secondPanel {
 	display: flex;
+	display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	background-color: white;
@@ -130,13 +133,16 @@ address {
 	opacity: 1;
 }
 #kathy {
-	float:right;
-	margin-left:1%;
+	float: right;
+	margin-left: 1%;
 	width: 25%;
-	min-width:200px;
+	min-width: 200px;
 }
 .underlay{
 	display: flex;
+	display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
 	justify-content: flex-start;
 	flex-wrap: wrap;
 	background-image: url("assets/underlay.png");
@@ -158,6 +164,9 @@ address {
 }
 #towns {
 	display: flex;
+	display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
 	flex-wrap: wrap;
 	list-style: none;
 }
